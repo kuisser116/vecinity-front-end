@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(100deg, #F4F4F4 0%, #A1A1A1 100%);
+    font-family: 'Inria Sans';
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    animation: fadeIn 5s ease-out forwards;
+    animation-delay: 1s;
+    pointer-events: none; 
+    z-index: 1;
+    opacity: 0;
+}
+
+.text {
+    position: absolute;
+    max-width: 30%;
+    top: 10%;
+    right: 20%;
+
+    opacity: 0;
+    animation: aparecerDesaparecer 5s forwards;
+    animation-delay: 1s;
+    z-index: 2
+    
+}
+
+@keyframes aparecerDesaparecer {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1; 
+    }
+    80% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0; 
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+.title{
+    max-width: 50%;
+    font-size: clamp(5rem, 8vw, 9rem);
+    font-weight: 900;
+    color: #2F2F2F; ;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.figure{
+    position: absolute;
+    max-width: clamp(5rem, 50vw, 60rem);
+    top: 30%;
+    left: 46%;
+    transition: transform 0.2s ease, outline-offset 0.2s ease;
+    z-index: 2;
+    opacity: 1 !important;
+}
+
+
+
+.figure:hover{
+    transform: scale(1.03);
+}
+
+.btn{
+    font-family: 'Montserrat';
+    color: #F4F4F4;
+    font-weight: 700;
+    font-size: 3vh;
+    position: absolute;
+    left: 20%;
+    border-radius: 25px;
+    height: 8vh;
+    outline: 2px solid black;
+    outline-offset: 3px;
+    cursor: pointer;
+    transition: transform 0.2s ease, outline-offset 0.2s ease;
+}
+
+.btn:hover{
+    transform: scale(1.01);
+}
+
+

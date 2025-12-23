@@ -1,0 +1,169 @@
+
+
+.container {
+    background-color: #ebebeb;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: #252525;
+    font-family: 'Montserrat';
+}
+
+h2{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+/* Tabla */
+.tabla {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.encabezado {
+    background-color: #ffffff;
+    height: 50px;
+}
+
+.tabla th {
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.tabla td {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.tabla img {
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn, .btnEliminar {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 8px;
+    border: 2px solid #252525;
+    background-color: #ffffff;
+    color: #252525;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #f5f5f5;
+}
+
+.btnEliminar {
+    border-color: #dc3546;
+    color: #dc3546;
+}
+
+.btnEliminar:hover {
+    background-color: #f8d7da;
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+    font-family: inherit;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.pagination button {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    color: #252525;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    color: #aaaaaa;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #f5f5f5;
+    border-color: #d0d0d0;
+}
+
+/* Modal Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Inputs y Formularios */
+.descriptionInput {
+    width: 90%;
+    height: 5vh;
+    background-color: #25252500;
+    border-color: #252525;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-bottom: 21px;
+    color: #252525;
+    padding: 5px 10px;
+}
+
+.tituloR {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    color: #F4F4F4;
+    background-color: #3a3a3a00;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tituloR:focus {
+    outline: none;
+    border: none;
+}
+
+

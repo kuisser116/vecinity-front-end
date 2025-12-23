@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(100deg, #F4F4F4 0%, #A1A1A1 100%);
+    font-family: 'Inria Sans';
+
+}
+
+.title{
+    color:#2F2F2F ;
+    font-size: clamp(5rem, 7vw, 10rem);
+    position: absolute;
+    top: 20%;
+    left: 41.5%;
+    margin: 0;
+}
+
+.inputContainer{
+    position: absolute;
+    left: 34%;
+    width: 30%;
+    top: 40%;
+}
+
+.input{
+    color: #2F2F2F;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2vh;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #2F2F2F;
+    transition: transform 0.2s ease, outline-offset 0.2s ease;
+
+}
+
+.input:hover{
+    transform: scale(1.01);
+}
+
+.input:focus {
+  outline: none;
+}
+
+
+.btn{
+    font-family: 'Montserrat';
+    color: #F4F4F4;
+    font-weight: 700;
+    font-size: 2vh;
+    position: absolute;
+    top: 115%;
+    left: 0%;
+    border-radius: 25px;
+    height: 6vh;
+    width: 108%;
+    outline: 2px solid #2F2F2F;
+    outline-offset: 3px;
+    cursor: pointer;
+    transition: transform 0.2s ease, outline-offset 0.2s ease;
+    padding-top: 11px;
+
+}
+
+.btn:hover{
+    transform: scale(1.01);
+}
+
+.registro{
+    position: absolute;
+    color: #2F2F2F;
+    font-size: 1.5vh;
+    top: 65%;
+    left: 46.5%;
+    cursor: pointer;
+    transition: transform 0.2s ease, outline-offset 0.2s ease;
+}
+
+
+.registro:hover{
+    color: #2F2F2F;
+    transform: scale(1.01);
+}
+
+.regresar{
+    position: absolute;
+    color: #2F2F2F;
+    font-size: 1.5vh;
+    top: 68%;
+    left: 48%;
+    cursor: pointer;
+    transition: transform 0.2s ease, outline-offset 0.2s ease;
+}
+
+.regresar:hover{
+    color: #2F2F2F;
+    transform: scale(1.01);
+}
