@@ -2,7 +2,7 @@ import './App.css'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion';
 import PrivateRoute from './components/components/privateRoute'
-import Home from './components/home/Home';
+import Home from './components/home/home';
 import MapV from './components/invitado/map';
 import Login from './components/home/login';
 import Register from './components/home/register'
